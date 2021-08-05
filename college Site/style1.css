@@ -1,0 +1,376 @@
+/* CSS Document */
+
+
+*{
+margin:0px;
+padding:0px;
+}
+img{
+border:none;
+}
+body{
+ background:#ECECF2;
+ font: 14px Helvetica, Sans-Serif;  
+
+}
+a									{ text-decoration: none; }
+ul									{ list-style: none; }
+.left{
+float:left;
+}
+.right{
+float:right;
+}
+
+
+
+
+
+
+
+/*************************************************************
+************************* wrapper *****************************
+**************************************************************/
+#wrapper{
+width:780px;
+margin:auto;
+border:solid 3px #bcbcbc;
+background:#fff;
+
+
+}
+
+/*************************************************************
+************************* Header *****************************
+**************************************************************/
+#header{
+width:780px;
+margin:auto;
+}
+
+#Title-bg h2{
+text-align: center; 
+color:#ff8316;
+padding-top:20px;
+
+}
+#Title-bg{
+background:url(images/fon_top.gif) repeat-x;
+width:100%;
+height:90px;
+}
+/*************************************************************
+************************* Image Slider  *****************************
+**************************************************************/
+
+#gallery {
+	position:relative;
+	height:360px
+}
+	#gallery a {
+		float:left;
+		position:absolute;
+	}
+	
+	#gallery a img {
+		border:none;
+	}
+	
+	#gallery a.show {
+		z-index:500
+	}
+
+	#gallery .caption {
+		z-index:600; 
+		background-color:#000; 
+		color:#ffffff; 
+		height:100px; 
+		width:100%; 
+		position:absolute;
+		bottom:0;
+	}
+
+	#gallery .caption .content {
+		margin:5px
+	}
+	
+	#gallery .caption .content h3 {
+		margin:0;
+		padding:0;
+		color:#1DCCEF;
+	}
+/*************************************************************
+************************* Menu *****************************
+**************************************************************/
+#access{
+width:780px;
+margin:auto;
+background:url(images/fon02.gif) repeat-x;
+height:24px;
+border-bottom:solid 1px #ff8316;
+border-top:solid 1px #ff8318;
+}
+#access ul{
+list-style:none;
+
+
+}
+
+ul.dropdown                         { position: relative; }
+ul.dropdown li                      { font-weight: bold; float: left; zoom: 1;  }
+ul.dropdown a:hover		            { color: #000; }
+ul.dropdown a:active                { color: #ffa500; }
+ul.dropdown li a                    { display: block; padding: 4px 8px; border-right: 1px solid  #EFEFEF;
+	 								  color: #000; }
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background: #FFA500; color: black; position: relative; }
+ul.dropdown li.hover a              { color: black; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 					{ font-weight: normal; background: #f6f6f6; color: #000; 
+									  border-bottom: 1px solid #ccc; float: none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+/*************************************************************
+************************* content *****************************
+**************************************************************/
+ #content {
+width:780px;
+background:#ddd;
+margin:auto;
+clear:both;
+
+}
+#content h1,h2,h3,h5,h6{
+color:#990000;
+}
+#content table td{
+
+color:#000;
+
+}
+#content table th{
+font-size:18px;
+color:#FFFFFF;
+}
+#content label{
+
+color:#003366
+font-family:"Times New Roman", Times, serif;
+font-weight:bold;
+}
+
+
+#content input:focus,select:focus
+{
+  color : #009;
+  border : 1px solid #990000;
+  background:#ffff99;
+  font-weight:bold;
+}
+#content input[type=button]
+{
+width:70px;
+height:30px;
+}
+#content-top{
+width:780px;
+
+
+clear:both;
+
+}
+
+#persional-detail table td input[type=text]{
+height:22px;
+border:2px solid #999999;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+border-radius: 10px;  
+width:180px;
+}
+#persional-detail table td select{
+width:170px;
+padding:4px;
+border:2px solid #999999;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+border-radius: 10px;  
+}
+#academic table td input[type=text]{
+width:222px;
+height:22px;
+border:2px solid #999999;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+border-radius: 10px;  
+}
+#academic table td select{
+width:170px;
+padding:4px;
+border:2px solid #999999;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+border-radius: 10px;
+}
+#computer{
+background:url(images/top01.jpg) no-repeat;
+width:198px;
+height:115px;
+float:left;
+
+}
+#admission-title-bg{
+background:url(images/fon_top.jpg) repeat-x;
+height:105px;
+width:537px;
+float:left;
+padding-left:45px;
+padding-top:10px;
+
+}
+
+#admission-title{
+width:280px;
+float:left;
+
+
+}
+#admission-title a{
+ font-size:18px;
+ text-decoration:blink;
+ color:#0000FF;
+}
+#admission-title b{
+color:#EF6D00;
+font-size:12px;
+}
+
+#member-login{
+
+background:#d2d2d2;
+float:left;
+margin-left:45px;
+
+border:solid 1px #333333;
+width:199px;
+border-top:none;
+
+}
+#member-login input[type=text],input[type=password]{
+width:116px;
+border:2px solid #999999;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+border-radius: 10px; 
+}
+#member-login input[type=submit]{
+float:right;
+}
+#news-title{
+color:#FFFFFF;
+font-weight:bold;
+font-size:18px;
+}
+#news-title-area{
+
+width:780px;
+height:28px;
+
+
+clear:both;
+}
+#news-area{
+width:170px;
+height:275px;
+background:url(images/new-bg.jpg) repeat-y;
+float:left;
+padding-left:18px;
+padding-right:10px;
+}
+#right-content-area{
+
+width:545px;
+
+float:left;
+padding-left:15px;
+padding-top:15px;
+padding-right:15px;
+padding-bottom:15px;
+}
+#right-content-area h2{
+color:#990000;
+text-align:center;
+
+}
+#right-content-area p{
+text-align:justify;
+line-height:18px;
+}
+#about-area{
+
+width:700px;
+
+float:left;
+padding-left:15px;
+padding-top:15px;
+padding-right:15px;
+padding-bottom:15px;
+}
+#about-area h2{
+color:#990000;
+}
+#about-area p{
+text-align:justify;
+margin-left:50px;
+line-height:20px;
+color:
+}
+#personal-info{
+background:#d2d2d2;
+clear:both;
+}
+#personal-info table input[type='text']{
+width:300px;
+}
+#personal-info h1{
+color:#666666;
+text-align:center;
+}
+#personal-info select{
+width:150px;
+}
+#invalid-user{
+color: #FF0000;
+font-size: 22px;
+text-align: center;
+}
+/*************************************************************
+************************* Footer *****************************
+**************************************************************/
+#footer{
+width:780px;
+height:30px;
+background:#fff;
+margin:auto;
+}
+#footer p{
+text-align:center;
+}
